@@ -1,9 +1,33 @@
-
+<header>
 <nav>
-     <ul>
-          <li ><a  class='{{#if state.home}}active{{/if}}' href='/'>Home</a></li>     
-          <li><a class='{{#if state.contact}}active{{/if}}' href='contact'>Contact</a></li>
+    <ul>
+        <li>
+            <a id='{{#if state.home}}active{{/if}}' href='/'>Home</a>
+        </li>
 
-     </ul>
+        <li>
+            <a id='{{#if state.about}}active{{/if}}' href='about'>About</a>
+            <ul class="dropdown">
+                <li><a href="about#conservation">Status</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a id='{{#if state.services}}active{{/if}}' href='services'>Services</a>
+            <ul class="dropdown">
+                <li><a href="services#sealrescue">Seal Rescue</a></li>
+                <li><a href="services#whaleandwildlife">Atlantic Whale and Wildlife Tours</a></li>
+                <li><a href="services#ecomarine">Eco Marine Tours</a></li>
+            </ul>
+        </li>
+
+        <li>
+            <a id='{{#if state.contact}}active{{/if}}' href='contact'>Contact</a>
+            <ul class="dropdown">
+                <li><a href="contact#form">Form</a></li>
+            </ul>
+        </li>
+    </ul>
 </nav>
-
+<h1 id="top">Marine Mammals</h1>
+</header>

@@ -1,20 +1,273 @@
-html, body {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0px;
+
+body, h1, h2, h3{
+font-family: "Lato", sans-serif;
 }
 
+h2{
+  background-color: rgba(0, 26, 255, 0.582);
+  color: #ffffff;
+}
+
+body{
+margin:0;
+color:#000411;
+line-height:1.6;
+background-color: rgb(234, 255, 253);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../images/waves.png");
+  border-style: groove;
+  border-color: black;
+  color: white;
+  background-size: contain;
+  background-repeat:repeat-x;
+}
+
+nav{
+    width: 100%;
+    background-color: #0077be;
+}
+header nav {
+  align-self: stretch;
+  width: 100%;
+}
 nav ul {
-    list-style: none; 
-    padding-left:0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 15px;
+  width: 100%;
 }
-nav li {
-    display:inline;
+
+nav ul li {
+  position:relative;
+}
+footer ul li{
+  list-style: none;
+  display: inline;
+  padding:20px;
+}
+
+nav ul li:hover > ul.dropdown {
+  display: block;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0 20px;
+    text-decoration: none;
+    color:#e0f7ff;
+    font-weight: bold;
+    background-color: inherit;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  transform: translateY(0);
+}
+
+
+
+nav ul li a:hover::after {
+  right: 5px;
+  opacity: 1;
+}
+
+#active a {
+  color: #000d31;
+  text-decoration: none;
+}
+
+nav ul li ul.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0067a3;
+  padding: 0px 0;
+  display:none;
+}
+
+
+nav ul li ul.dropdown li a {
+  padding: 10px 20px;
+  border-radius: 0;
+  display: block;
+  text-align: left;
+  color: #e0f7ff;
+}
+
+nav ul li ul.dropdown li a:hover {
+  background-color: hsl(212, 100%, 74%);
+  transform: translateY(0);
+}
+
+h1{
+background-color:#ffffff;
+display:inline-block;
+color:#000000;
+}
+
+h3{
+background-color:#2f00ff7a;
+display:inline-block;
+color:#ffffff;
+}
+
+
+#animals{
+background-color: rgb(158,196,192);
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+padding:20px;
+}
+#animals h4{
+  width: 100%;
+  text-align: center;
+}
+
+#animals img{
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+}
+
+.required{
+font-weight:bold;
+color:red;
+}
+
+input{
+margin-left:1em;
+margin-bottom:.5em;
+width:220px;
+}
+
+footer{
+text-align:center;
+background:#270089;
+color:white;
+padding: 10px;
+font-family: Verdana;
+margin : 0;
+position : relative;
+bottom : 0px;
+width : 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+label{
+    float:left;
+    width:112px;
+    padding-right: 10px;
+    text-align:right;
+}
+
+#button, #reset{
+    margin-top:.5em;
+    width:8em;
+    background-color: rgb(89, 69, 187);
+    border:2px solid rgb(82, 33, 97);
+    margin-left:80px;
+}
+#button:hover, #reset:hover{
+  background-color: rgb(109, 83, 234);
+  border:2px solid rgb(114, 44, 136);
+}
+#message{
+  max-width: 250px;
+  max-height: 250px;
 
 }
-.active {
-    color :white;
-    background-color:green;
-    padding:0.5em;
+
+#marine{
+  background-color: rgb(206, 232, 255);
+}
+a{
+  text-decoration: none;
+  color:rgb(197, 97, 255);
+}
+iframe{
+  display: block;
+  padding: 10px;
+}
+
+.maps{
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom:50px;
 
 }
+
+.maps iframe{
+  flex: 2;
+  max-width: 100%;
+}
+
+.maps aside{
+  flex:2;
+  border-style:dotted;
+  border-color: #000411;
+  margin-top: 10px;
+}
+table{
+  border-style: groove;
+  border-color: #8296d5;
+  margin:auto;
+  margin-bottom: 20px;
+  width:60%;
+  background-color: #aac5d5;
+}
+th{
+  border-style:groove;
+  border-color:#8296d5;
+}
+.gie-single{
+  float:right;
+  margin:10px;
+}
+.background{
+  width: 75%;
+  margin-left: 15px;
+  font-style: italic;
+  background-color: rgba(0, 136, 255, 0.351);
+}
+.wallpaper{
+  width:80%;
+  max-width: 100%;
+  display:block;
+  background-color: white;
+  border: #000d3164;
+  border-style:dashed;
+  margin:auto;
+  margin-bottom: 10px;
+  column-count:2;
+  column-gap:15px;
+  column-rule:1px solid black;
+}
+aside{
+  grid-column:2;
+  grid-row:1/span 10;
+  position:sticky;
+  background-color: #ffffff;
+  
+}
+
+#wallpaper p{
+        margin-left:10px;
+      }
+      .wallpaper h4{
+        margin-right:20px;
+        column-span:all;
+      }

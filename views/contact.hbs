@@ -1,4 +1,50 @@
-<main>
-    <h1>Contact</h1>
-    <p>Hello World! :] </p>
+  <style>
+#form {
+    background-size: cover;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-style:dashed;
+    border-color: #000411;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.706);
+}
+#ocean{
+  background-image:url("images/water.jpg");
+  background-size: cover;
+}
+.requirement{
+  color:red;
+}
+
+</style>
+<main id = "ocean">
+
+<section id="form">
+
+<h2>Contact Details</h2>
+
+<fieldset>
+<legend><strong>Contact Form</strong></legend>
+
+<form action="http://foo.com" method="get">
+
+<label for="full_name"><strong>Name:</strong><span class="requirement">*</span></label>
+<input type="text" name="full_name" id="full_name" required autofocus><br>
+
+<label for="email"><strong>Email:</strong><span class="requirement">*</span></label>
+<input type="email" name="email" id="email" required placeholder="johndoe@example.com"><br>
+
+<label for="message"><strong>Query:</strong><span class="requirement">*</span></label>
+<textarea id="message" name="message" rows="6" cols="40" maxlength="200"
+placeholder="Your message must be less than 200 characters"></textarea><br>
+
+<input type="submit" value="Submit" id="button">
+<input type="reset" id="reset">
+</form>
+</fieldset>
+
+</section>
+
 </main>

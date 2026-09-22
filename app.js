@@ -52,8 +52,24 @@ app.get('/contact', (req, res) => {
     console.log('contact')
   });
 
+  app.get('/services', (req, res) => {
+    state={services : true}
+    head={title:"Services - Week 1"}
+    res.render('services', { state, head});
+    console.log('services')
+  });
+
+  app.get('/about', (req, res) => {
+    state={about : true}
+    head={title:"About - Week 1"}
+    res.render('about', { state, head});
+    console.log('about')
+  });
+
 
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');
 });
+
+
