@@ -66,6 +66,12 @@ app.get('/contact', (req, res) => {
     console.log('about')
   });
 
+    app.get('/responsiveexample', (req, res) => {
+    state={responsiveexample : true}
+    head={title:"Responsive Example - Week 1"}
+    res.render('responsiveexample', { state, head});
+    console.log('responsiveexample')
+  });
 
 // Start the server
 app.listen(3000, () => {

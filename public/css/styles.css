@@ -111,7 +111,7 @@ nav ul li ul.dropdown li a:hover {
 
 h1{
 background-color:#ffffff;
-display:inline-block;
+display:block;
 color:#000000;
 }
 
@@ -187,7 +187,6 @@ label{
 #message{
   max-width: 250px;
   max-height: 250px;
-
 }
 
 #marine{
@@ -264,10 +263,18 @@ aside{
   
 }
 
+.exampleImages{
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
 #wallpaper p{
         margin-left:10px;
       }
-      .wallpaper h4{
+.wallpaper h4{
         margin-right:20px;
         column-span:all;
       }
