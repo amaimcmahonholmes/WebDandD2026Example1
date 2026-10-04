@@ -1,10 +1,29 @@
 <main>
     <h2>Top Five Favourite Marine Animals in Ireland</h2>
-    <section id = "exampleImages">
-    <img src="images/beluga.jpg" width="250" height="250" alt="beluga whale">
-    <img src="images/northernbottlenosewhale.jpg" width="250" height="250" alt="northern bottlenose whale">
-    <img src="images/commonseal.jpg" width="250" height="250" alt="common seal">
-    <img src="images/greyseal.jpg" width="250" height="250" alt="grey seal">
-    <img src="images/harborporpoise.jpg" width="250" height="250" alt="harbor porpoise">
+    <section id="exampleImages">
+        <article class="cardImages">
+            <h3>Beluga Whale</h3>
+            <img src="/images/beluga.jpg" width="250" height="250" alt="beluga whale">
+        </article>
+        <article class="cardImages">
+            <h3>Northern Bottlenose Whale</h3>
+            <img src="/images/northernbottlenosewhale.jpg" width="250" height="250" alt="northern bottlenose whale">
+        </article>
+        <article class="cardImages">
+            <h3>Common Seal</h3>
+            <picture>
+                <source media="(max-width: 600px)" srcset="/images/commonseal-mobile.jpg">
+                <source media="(max-width: 1000px)" srcset="/images/commonseal-tablet.jpg">
+                <img src="/images/commonseal.jpg" alt="common seal">
+            </picture>
+        </article>
+        <article class="cardImages">
+            <h3>Grey Seal</h3>
+            <img src="/images/greyseal.jpg" width="250" height="250" alt="grey seal">
+        </article>
+        <article class="cardImages">
+            <h3>Harbor Porpoise</h3>
+            <img src="/images/harborporpoise.jpg" width="250" height="250" alt="harbor porpoise">
+        </article>
     </section>
 </main>
